@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="regDemo:war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/regDemo_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="regDemo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../../commons/commons-fileupload-1.3.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../commons/mail-1.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../commons/mysql-connector-java-8.0.23.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="regDemo/web/Web" />
+    </root>
+  </artifact>
+</component>
