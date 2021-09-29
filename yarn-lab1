@@ -35,3 +35,4 @@ wordstandarddeviation	Counts the standard deviation of the length of the words i
        Connect to HADOOP cluster using SSH.
        From the SSH session, use the following command to list the samples:
 $   yarn jar /usr/odp/current/hadoop-mapreduce-client /hadoop-mapreduce-examples .jar
+https://github.com/bipt-lyle/bipt-liuyingda/blob/main/image.png
