@@ -1,0 +1,40 @@
+
+
+
+
+YARN & MapReduce 1
+Lucas BAKALIAN & Micha¨el HATOUM September 7, 2021
+
+1YARN
+In this tutorial, we will use MapReduce examples to learn how to work with Apache YARN.
+
+1.1The MapReduce examples
+The samples are located on the Hortonworks Data Platform cluster at:
+   /usr/odp/current/hadoop-mapreduce-client/hadoop-mapreduce-examples.jar
+Source code for these samples is included on the ODP cluster at:
+      /usr/odp/current/hadoop-client/src/hadoop-mapreduce-project/hadoop-mapreduce-examples
+
+The following samples are contained in this archive:
+
+Sample	Description
+aggregatewordcount	Counts the words in the input files.
+aggregatewordhist	Computes the histogram of the words in the input files. bbp	Uses Bailey-Borwein-Plouffe to compute exact digits of Pi.
+dbcount	Counts the pageview logs stored in a database.
+distbbp	Uses a BBP-type formula to compute exact bits of Pi.
+grep	Counts the matches of a regex in the input.
+join	Performs a join over sorted, equally partitioned datasets.
+multifilewc	Counts words from several files.
+pentomino	Tile laying program to find solutions to pentomino problems. pi	Estimates Pi using a quasi-Monte Carlo method. randomtextwriter	Writes 10 GB of random  textual  data  per  node. randomwriter	Writes 10 GB of random data per node.
+secondarysort	Defines a secondary sort to the reduce phase. sort	Sorts the data written by the random writer.
+sudoku	A sudoku solver.
+teragen	Generate data for the terasort.
+terasort	Run the terasort.
+teravalidate	Checking results of terasort.
+wordcount	Counts the words in the input files.
+wordmean	Counts the average length of the words in the input files. wordmedian	Counts the median length of the words in the input files.
+wordstandarddeviation	Counts the standard deviation of the length of the words in the input files.
+
+1.2Run the wordcount example
+       Connect to HADOOP cluster using SSH.
+       From the SSH session, use the following command to list the samples:
+$   yarn jar /usr/odp/current/hadoop-mapreduce-client /hadoop-mapreduce-examples .jar
